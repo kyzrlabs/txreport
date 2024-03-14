@@ -1,11 +1,9 @@
 
-
-
 export class BitpandaTXApi {
 
 
     constructor(apiKey) {
-        this._baseUrl = "http://localhost:8080";
+        this._baseUrl = import.meta.env.VITE_API_HOST
         this._apiKey = apiKey;
         this._type = "";
         this._status = "";
